@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kashif Hussain Ansari — Senior Laravel Developer</title>
+<meta name="description" content="Senior Laravel Developer with 12+ years of PHP experience. ERP systems, REST APIs, WordPress and WHMCS. Lahore, Pakistan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6FB;--s1:#FFFFFF;--s2:#ECEEF7;--ink:#141A2E;--mut:#5A6380;--line:#DCE0EE;--a:#E8452F;--b:#6D4CFF;--c:#0EA5C6;--g:#12A66A;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#090D1A;--s1:#111831;--s2:#18213F;--ink:#EEF1FB;--mut:#9AA5C6;--line:#242E52;--a:#FF6B52;--b:#8E74FF;--c:#27D3F2;--g:#3DDC97;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#090D1A;--s1:#111831;--s2:#18213F;--ink:#EEF1FB;--mut:#9AA5C6;--line:#242E52;--a:#FF6B52;--b:#8E74FF;--c:#27D3F2;--g:#3DDC97;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Sora,Inter,system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit}p{margin:0 0 1em;max-width:66ch}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px;position:relative}
+section{padding:90px 0 0}
+h2{font-size:clamp(1.8rem,4.5vw,2.7rem);font-weight:700;margin-bottom:12px}
+.sub{color:var(--mut);margin-bottom:36px}
+.grad{background:linear-gradient(100deg,var(--a),var(--b) 55%,var(--c));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:flow 8s linear infinite}
+@keyframes flow{to{background-position:200% 0}}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:20;padding:calc(10px + env(safe-area-inset-top,0px)) 0 10px;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+nav b{font-family:Sora,sans-serif}
+nav div{display:flex;gap:18px;align-items:center;font-size:.92rem}
+nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--ink)}
+nav button{background:var(--s2);color:var(--ink);border:1px solid var(--line);border-radius:999px;width:36px;height:36px;cursor:pointer;font-size:1rem}
+@media (max-width:700px){nav a.l{display:none}}
+
+/* hero */
+.hero{padding:150px 0 20px;position:relative;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.45;animation:float 14s ease-in-out infinite;pointer-events:none}
+.b1{width:420px;height:420px;background:var(--b);top:-80px;right:-60px}
+.b2{width:340px;height:340px;background:var(--a);top:160px;left:-120px;animation-delay:-5s;opacity:.3}
+.b3{width:260px;height:260px;background:var(--c);bottom:-60px;right:25%;animation-delay:-9s;opacity:.25}
+@keyframes float{50%{transform:translate(40px,-30px) scale(1.12)}}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--line);background:var(--s1);border-radius:999px;font-size:.9rem;color:var(--mut)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--g);box-shadow:0 0 0 0 var(--g);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{font-size:clamp(2.6rem,9vw,5.8rem);font-weight:800;letter-spacing:-.04em;margin:22px 0 14px}
+.type{font:600 clamp(1.1rem,2.8vw,1.6rem) Sora,sans-serif;min-height:1.6em}
+.type i{display:inline-block;width:3px;height:1.1em;background:var(--a);vertical-align:-.15em;margin-left:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{color:var(--mut);margin-top:16px;font-size:1.1rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:13px 24px;border-radius:12px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:var(--s1);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px -10px var(--b)}
+.btn.p{background:linear-gradient(100deg,var(--a),var(--b));border:0;color:#fff}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:56px}
+.stat{background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:20px}
+.stat b{display:block;font:800 2.3rem Sora,sans-serif;background:linear-gradient(100deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--mut);font-size:.92rem}
+
+/* marquee */
+.mq{overflow:hidden;margin-top:56px;border-block:1px solid var(--line);padding:16px 0;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mq div{display:flex;gap:40px;width:max-content;animation:mq 38s linear infinite;font:600 1.05rem Sora,sans-serif;color:var(--mut)}
+.mq span::after{content:"✦";margin-left:40px;color:var(--a)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.sk{background:var(--s1);border:1px solid var(--line);border-radius:18px;padding:24px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
+.sk::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--a),var(--b),var(--c));transform:scaleX(0);transform-origin:left;transition:transform .5s}
+.sk:hover{transform:translateY(-4px);border-color:var(--b)}.sk:hover::before{transform:scaleX(1)}
+.sk h3{font-size:1.1rem;margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:.82rem;padding:4px 10px;border-radius:999px;background:var(--s2);color:var(--mut)}
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:var(--s1);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s;transform-style:preserve-3d}
+.card:hover{border-color:var(--b);box-shadow:0 24px 50px -24px var(--b)}
+.shot{background:linear-gradient(135deg,var(--s2),var(--bg));padding:22px 22px 0;height:210px;overflow:hidden}
+.win{background:var(--s1);border:1px solid var(--line);border-radius:10px 10px 0 0;height:100%;padding:10px 12px;box-shadow:0 10px 30px -12px #0006;transition:transform .5s}
+.card:hover .win{transform:translateY(-8px)}
+.win .tb{display:flex;gap:5px;margin-bottom:10px}.win .tb i{width:8px;height:8px;border-radius:50%;background:var(--a)}.win .tb i:nth-child(2){background:#F5B83D}.win .tb i:nth-child(3){background:var(--g)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px}
+.tiles div{background:var(--s2);border-radius:6px;padding:6px 8px;font-size:.62rem;color:var(--mut)}.tiles b{display:block;font:700 .9rem Sora,sans-serif;color:var(--ink)}
+.bars{display:flex;align-items:flex-end;gap:6px;height:70px}
+.bars i{flex:1;border-radius:4px 4px 0 0;background:linear-gradient(var(--b),var(--c));height:0;transition:height 1.1s cubic-bezier(.2,.8,.2,1)}
+.in .bars i{height:var(--h)}
+.rows div{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:.68rem;color:var(--mut)}
+.rows em{font-style:normal;padding:1px 8px;border-radius:99px;font-size:.6rem;background:color-mix(in srgb,var(--g) 20%,transparent);color:var(--g)}
+.rows em.w{background:color-mix(in srgb,var(--a) 20%,transparent);color:var(--a)}
+.track{display:flex;align-items:center;margin:22px 4px 14px}
+.track i{width:14px;height:14px;border-radius:50%;background:var(--s2);border:2px solid var(--b);flex:none}
+.track i.on{background:var(--b)}.track u{flex:1;height:3px;background:var(--s2);position:relative;overflow:hidden}
+.track u::after{content:"";position:absolute;inset:0;background:var(--b);transform:scaleX(0);transform-origin:left;transition:transform 1s .3s}.in .track u::after{transform:scaleX(1)}
+code{display:block;font:500 .66rem/1.6 ui-monospace,Menlo,Consolas,monospace;color:var(--c);white-space:pre}code s{color:var(--a);text-decoration:none}
+.info{padding:20px 22px 24px}
+.info h3{font-size:1.15rem;margin-bottom:6px}.info p{color:var(--mut);font-size:.94rem;margin-bottom:12px}
+
+/* web */
+.sites{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.site{background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:20px;transition:transform .25s}
+.site:hover{transform:translateY(-4px)}
+.site h3{font-size:1rem;overflow-wrap:anywhere}.site .t{color:var(--c);font-weight:600;font-size:.85rem;margin:4px 0 8px}.site p{margin:0;color:var(--mut);font-size:.92rem}
+
+/* timeline */
+.tl{border-left:2px solid var(--line);margin-left:8px}
+.job{position:relative;padding:0 0 34px 30px}
+.job::before{content:"";position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--a)}
+.job .y{color:var(--a);font-weight:600;font-size:.9rem}.job h3{font-size:1.2rem;margin:4px 0 10px}
+.job ul{margin:0;padding-left:1.1em;color:var(--mut)}.job li{margin-bottom:6px;max-width:70ch}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.edu div{background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:20px}.edu b{display:block}.edu span{color:var(--mut);font-size:.94rem}
+
+footer{margin-top:100px;padding:80px 0 50px;text-align:center;position:relative;overflow:hidden;background:linear-gradient(160deg,var(--s2),var(--bg))}
+footer h2{font-size:clamp(2rem,6vw,3.6rem)}footer p{margin:0 auto 28px;color:var(--mut)}
+footer .cta{justify-content:center}footer small{display:block;margin-top:44px;color:var(--mut)}
+
+/* reveal + progress */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;z-index:30;background:linear-gradient(90deg,var(--a),var(--b),var(--c))}
+@media (max-width:640px){body{font-size:16px}section{padding-top:64px}.hero{padding-top:120px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}.bars i{height:var(--h)}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav><div class="wrap"><b>Kashif.</b><div><a class="l" href="#skills">Skills</a><a class="l" href="#work">Projects</a><a class="l" href="#experience">Experience</a><a href="#contact">Contact</a><button id="th" aria-label="Toggle light or dark theme">◐</button></div></div></nav>
+
+<header class="hero"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="wrap">
+  <span class="pill"><span class="dot"></span>Available for new projects</span>
+  <h1>Kashif Hussain<br><span class="grad">Ansari</span></h1>
+  <div class="type"><span id="ty"></span><i></i></div>
+  <p class="lead">I build ERP systems, REST APIs and web apps in Laravel that stay fast as the data grows.</p>
+  <div class="cta"><a class="btn p" href="mailto:kashif204@gmail.com">Hire me</a><a class="btn" href="#work">View projects</a></div>
+  <div class="stats">
+    <div class="stat"><b data-n="12" data-s="+">0</b><span>years in PHP</span></div>
+    <div class="stat"><b data-n="100" data-s="+">0</b><span>projects delivered</span></div>
+    <div class="stat"><b data-n="9" data-s="">0</b><span>Laravel systems built</span></div>
+    <div class="stat"><b data-n="99" data-s="">0</b><span>best PageSpeed score</span></div>
+  </div>
+</div></header>
+
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<main class="wrap">
+<section id="skills"><h2 class="rv">Skills</h2><p class="sub rv">The tools I use every day.</p>
+<div class="skills" id="sk"></div></section>
+
+<section id="work"><h2 class="rv">Projects</h2><p class="sub rv">Systems I’ve built. Previews are illustrations of each project’s main screen.</p>
+<div class="projects" id="pr"></div></section>
+
+<section id="web"><h2 class="rv">WordPress, SEO and e-commerce</h2><p class="sub rv">Client sites tuned for speed and search.</p>
+<div class="sites">
+<div class="site rv"><h3>ericabloomlaw.com</h3><div class="t">WordPress</div><p>Responsive site with custom functionality and SEO best practices.</p></div>
+<div class="site rv" style="--d:.08s"><h3>redialplumbingheating.com</h3><div class="t">SEO and speed</div><p>On-page SEO and Core Web Vitals tuning. PageSpeed 80+.</p></div>
+<div class="site rv" style="--d:.16s"><h3>doorxpert.ca</h3><div class="t">SEO and speed</div><p>Technical SEO and speed work. PageSpeed 80+.</p></div>
+<div class="site rv" style="--d:.24s"><h3>axionac.com</h3><div class="t">SEO and speed</div><p>Schema SEO and speed tuning. PageSpeed 99 / 85.</p></div>
+<div class="site rv" style="--d:.32s"><h3>wisemarket.com.pk</h3><div class="t">E-commerce</div><p>Online store with product management and integrated checkout.</p></div>
+</div></section>
+
+<section id="experience"><h2 class="rv">Experience</h2><p class="sub rv">Twelve years, four companies.</p>
+<div class="tl">
+<div class="job rv"><div class="y">2022 – Present</div><h3>Senior Laravel Developer, Oztechwork</h3><ul>
+<li>Lead Laravel development from models and Blade views to REST APIs, Sanctum/Passport auth and queued jobs.</li>
+<li>Structure codebases with service and repository patterns, form requests, policies and role-based access.</li>
+<li>Build versioned REST APIs for web and mobile, and integrate Stripe and PayPal with webhooks.</li>
+<li>Speed up apps with eager loading, index tuning, Redis caching and queue workers, backed by PHPUnit/Pest tests.</li>
+<li>Deliver WHMCS automation and WordPress SEO and Core Web Vitals work.</li></ul></div>
+<div class="job rv"><div class="y">2017 – 2022</div><h3>Senior Laravel / PHP Developer, SolutionDots</h3><ul>
+<li>Designed enterprise ERP modules in Laravel and CodeIgniter with complex Eloquent relationships, permissions, reporting and background jobs.</li>
+<li>Optimized MySQL schemas and queries for data-heavy ERP workflows.</li>
+<li>Delivered WordPress customizations for international clients.</li></ul></div>
+<div class="job rv"><div class="y">2015 – 2017</div><h3>Senior PHP Developer, Jouple</h3><ul><li>Built business applications in Core PHP and WordPress, and integrated REST APIs and third-party services.</li></ul></div>
+<div class="job rv"><div class="y">2011 – 2014</div><h3>PHP Developer, Sulata Isoft</h3><ul><li>Delivered backend modules and custom WordPress websites with responsive, pixel-accurate interfaces.</li></ul></div>
+</div></section>
+
+<section id="education"><h2 class="rv">Education and languages</h2>
+<div class="edu"><div class="rv"><b>Master of Computer Science (MCS)</b><span>Islamia University, Bahawalpur, 2007 – 2009</span></div>
+<div class="rv" style="--d:.1s"><b>BSc Computer Science</b><span>Islamia University, Bahawalpur, 2004 – 2006</span></div>
+<div class="rv" style="--d:.2s"><b>Languages</b><span>English (professional), Urdu (native)</span></div></div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<h2 class="rv">Let’s build <span class="grad">something solid</span></h2>
+<p class="rv">Open to Laravel, API and ERP work. Send a short note about what you need.</p>
+<div class="cta rv"><a class="btn p" href="mailto:kashif204@gmail.com">kashif204@gmail.com</a><a class="btn" href="tel:+923136646887">+92 313 6646887</a><a class="btn" href="https://wa.me/923136646887" rel="noopener">WhatsApp</a></div>
+<small>© Kashif Hussain Ansari · Lahore, Pakistan</small></div></footer>
+
+<script>
+document.documentElement.classList.add('js');
+var $=function(i){return document.getElementById(i)};
+var SK=[["Laravel core","Eloquent ORM,Blade,Artisan,Migrations,Seeders,Factories,Service Container"],["Auth and access","Sanctum,Passport,Middleware,Policies,Gates,Form Requests,RBAC"],["Background work","Queues,Horizon,Redis,Scheduler,Events,Notifications"],["Ecosystem","Livewire,Inertia.js,Vue.js,Vite,Spatie,Laravel Excel,DomPDF,Socialite,Cashier,Telescope"],["APIs and payments","REST APIs,API Resources,Stripe,PayPal,Webhooks,Postman"],["Testing and design","PHPUnit,Pest,Repository pattern,SOLID"],["Frontend","HTML5,CSS3,Bootstrap,Tailwind,JavaScript,jQuery"],["Database and DevOps","MySQL tuning,Indexing,Git,Composer,Docker,Deployments"],["CMS and billing","WordPress,WooCommerce,WHMCS,CodeIgniter,Core PHP,SEO,Core Web Vitals"]];
+$('sk').innerHTML=SK.map(function(s,i){return '<div class="sk rv" style="--d:'+(i%3*.08)+'s"><h3>'+s[0]+'</h3><div class="tags">'+s[1].split(',').map(function(t){return '<span>'+t+'</span>'}).join('')+'</div></div>'}).join('');
+var m=["Laravel 10/11","PHP 8","REST APIs","ERP Systems","Livewire","Redis","Queues","Stripe","PayPal","WordPress","WHMCS","MySQL","Docker","PHPUnit","Tailwind"];
+$('mq').innerHTML=m.concat(m).map(function(t){return '<span>'+t+'</span>'}).join('');
+
+function bars(h){return '<div class="bars">'+h.map(function(v){return '<i style="--h:'+v+'%"></i>'}).join('')+'</div>'}
+function tiles(a){return '<div class="tiles">'+a.map(function(x){return '<div>'+x[0]+'<b>'+x[1]+'</b></div>'}).join('')+'</div>'}
+function rows(a){return '<div class="rows">'+a.map(function(x){return '<div><span>'+x[0]+'</span><em class="'+(x[2]||'')+'">'+x[1]+'</em></div>'}).join('')+'</div>'}
+var P=[
+["ERP Suite","Inventory, sales, accounting and HR with role-based access, queued reports and exports, and audit logging.",["RBAC","Queues","Audit log"],tiles([["Orders","1,284"],["Stock","8.4k"],["Staff","142"]])+bars([40,62,48,80,66,92,74])],
+["Inventory Management","Multi-warehouse stock, purchase orders, suppliers, low-stock alerts by queued notification, exportable reports.",["Multi-warehouse","Notifications","Excel export"],rows([["Warehouse A · Cables","In stock"],["Warehouse B · Panels","Low","w"],["PO #2041 · Supplier","Received"],["Warehouse A · Sensors","In stock"]])],
+["Sales Management","Quotations, invoicing, payment tracking, taxes and discounts, PDF invoices, dashboards.",["PDF invoices","Roles","Dashboards"],tiles([["Revenue","$48k"],["Paid","92%"],["Due","14"]])+bars([30,45,58,52,76,88,95])],
+["HR & Payroll","Employee records, attendance, leave, and payroll processing with scheduled monthly jobs.",["Scheduler","Attendance","Payroll"],rows([["Ali · Attendance","Present"],["Sara · Leave request","Pending","w"],["March payroll","Processed"],["Omar · Attendance","Present"]])],
+["Container Management","Bookings, shipment and status tracking, documents, queued notifications.",["Tracking","Documents","Queues"],'<div class="track"><i class="on"></i><u></u><i class="on"></i><u></u><i class="on"></i><u></u><i></i></div>'+rows([["CNT-4471 · Booked","Confirmed"],["CNT-4471 · At port","In transit","w"]])],
+["REST API backend","Versioned APIs for web and mobile with Sanctum auth, API Resources, validation and rate limiting.",["Sanctum","API Resources","Rate limiting"],'<code>GET <s>/api/v1/orders</s>\nAuthorization: Bearer ••••\n\n{ "data": [\n  { "id": 2041,\n    "status": "paid" }\n], "meta": { "page": 1 } }</code>'],
+["ukajapan.com","Full-stack Laravel app with Eloquent models, Blade, RESTful APIs, queued jobs, caching and a responsive UI.",["Laravel","Caching","Responsive"],tiles([["Pages","48"],["Jobs","312"],["Cache","98%"]])+bars([55,70,45,85,60,78,90])],
+["oztechwork.com","Laravel web applications, REST API integrations and WHMCS automation, end to end.",["Laravel","WHMCS","APIs"],rows([["Invoice generated","Auto"],["Service provisioned","Done"],["Ticket synced","Queued","w"]])],
+["solutiondots.com","Enterprise ERP modules in Laravel and CodeIgniter with optimized database design and reporting.",["ERP","CodeIgniter","Reports"],tiles([["Modules","12"],["Users","350"],["Reports","60"]])+bars([35,50,66,58,82,70,96])]
+];
+$('pr').innerHTML=P.map(function(p,i){return '<article class="card rv" style="--d:'+(i%3*.1)+'s"><div class="shot"><div class="win"><div class="tb"><i></i><i></i><i></i></div>'+p[3]+'</div></div><div class="info"><h3>'+p[0]+'</h3><p>'+p[1]+'</p><div class="tags">'+p[2].map(function(t){return '<span>'+t+'</span>'}).join('')+'</div></div></article>'}).join('');
+
+/* typing */
+var W=["Senior Laravel Developer","ERP and inventory systems","REST API architect","WordPress and WHMCS expert"],wi=0,ci=0,del=false,ty=$('ty');
+function tick(){var w=W[wi];ci+=del?-1:1;ty.textContent=w.slice(0,ci);var t=del?35:75;
+if(!del&&ci===w.length){del=true;t=1500}else if(del&&ci===0){del=false;wi=(wi+1)%W.length;t=300}setTimeout(tick,t)}tick();
+
+/* reveal + counters */
+function count(e){var n=+e.dataset.n,s=e.dataset.s,st=null;function f(ts){st=st||ts;var p=Math.min((ts-st)/1400,1);e.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+try{var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+var io2=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){count(x.target);io2.unobserve(x.target)}})});
+document.querySelectorAll('[data-n]').forEach(function(e){io2.observe(e)})}
+catch(e){document.querySelectorAll('.rv').forEach(function(e){e.classList.add('in')});document.querySelectorAll('[data-n]').forEach(function(e){e.textContent=e.dataset.n+e.dataset.s})}
+
+/* card tilt (mouse only) */
+if(matchMedia('(hover:hover)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+x*6+'deg) rotateX('+-y*6+'deg) translateY(-4px)'});c.addEventListener('mouseleave',function(){c.style.transform=''})})}
+
+/* scroll bar + theme */
+addEventListener('scroll',function(){var h=document.documentElement;$('bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+$('th').onclick=function(){var r=document.documentElement;r.setAttribute('data-theme',r.getAttribute('data-theme')==='dark'?'light':'dark')};
+</script>
+</body>
+</html>
